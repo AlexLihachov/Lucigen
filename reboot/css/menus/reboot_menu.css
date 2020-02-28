@@ -1,0 +1,190 @@
+/* DROPDOWN / FLYOUT MENU
+-------------------------*/
+
+#xmm, #xmm_container {
+    width: 100%;
+    z-index: 9999;
+}
+
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sf-menu li {
+    position: relative;
+}
+
+.sf-menu ul {
+    /*position: absolute;*/
+    /*display: none;*/
+    /*top: 100%;*/
+    /*left: 0;*/
+    /*z-index: 9999;*/
+}
+
+.sf-menu > li {
+    float: left;
+}
+
+.sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
+    display: block;
+}
+
+.sf-menu a {
+    display: block;
+    position: relative;
+}
+
+.sf-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.sf-menu {
+    float: left;
+    width: 100%;
+}
+
+.sf-menu ul {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .3);
+    min-width: 180px;
+    *width: 180px;
+}
+
+.sf-menu li {
+    white-space: nowrap;
+    *white-space: normal;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover {
+    -webkit-transition: none;
+    transition: none;
+}
+
+.sf-menu  li:hover a, .sf-menu li.sfHover a {
+    color: #000;
+}
+
+.sf-menu a {
+    border-left: 0px solid #fff;
+    padding: 10px 15px;
+    zoom: 1;
+}
+
+.sf-menu .badge {
+    padding: 3px 7px 3px 7px;
+    margin-left: 4px;
+}
+
+.sf-menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.sf-menu a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sf-arrows .sf-with-ul {
+    padding-right: 2.5em;
+    *padding-right: 1em;
+}
+
+.sf-arrows .sf-with-ul:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: #eee;
+}
+
+.sf-arrows > li > .sf-with-ul:focus:after, .sf-arrows > li:hover > .sf-with-ul:after, .sf-arrows > .sfHover > .sf-with-ul:after {
+    border-top-color: #fff;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+    margin-top: -5px;
+    margin-right: -3px;
+    border-color: transparent;
+    border-left-color: #eee;
+}
+
+.sf-arrows ul li > .sf-with-ul:focus:after, .sf-arrows ul li:hover > .sf-with-ul:after, .sf-arrows ul .sfHover > .sf-with-ul:after {
+    border-left-color: #fff;
+}
+
+#resp_menu {
+    position: relative;
+}
+
+.sf-menu ul {
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sf-menu li {
+    position: static;
+}
+
+.sf-menu .wrapper {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+}
+
+.sf-menu li:hover > .wrapper {
+    opacity: 1;
+    transition: opacity .5s;
+    visibility: visible;
+}
+
+a.sf-with-ul {
+    padding-right: 2.5em;
+}
+
+a.sf-with-ul:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: #eee;
+}
+
+.sf-with-ul + .wrapper .sf-with-ul:after {
+    border-color: transparent transparent transparent #000;
+    margin-top: -5px;
+    margin-left: -3px;
+}
+
+.sf-menu > li.parent--main.active > a {
+    color: #000;
+}
+
+.sf-menu > li.parent--main.active > a:after {
+    border-top-color: #000;
+}
+
+.sf-menu > li > a:hover:after {
+    border-top-color: #000;
+}
+
+.parent.active:not(.parent--main) > a {
+    background: #eaeaea;
+}

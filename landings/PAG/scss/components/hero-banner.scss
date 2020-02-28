@@ -1,0 +1,64 @@
+.c-hero-banner {
+    padding-top: 4rem;
+    padding-bottom: 4.6rem;
+
+    overflow: hidden;
+    background: linear-gradient(top, #62c9c7, #027c8d);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#62c9c7), to(#027c8d));
+    background: -webkit-linear-gradient(top, #62c9c7, #027c8d);
+    background: -moz-linear-gradient(top, #62c9c7, #027c8d);
+    background: -o-linear-gradient(top, #62c9c7, #027c8d);
+    background: -ms-linear-gradient(top, #62c9c7, #027c8d);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#62c9c7', endColorstr='#027c8d', GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c9c7',endColorstr='#027c8d')";
+
+    color: #fff;
+
+    .row {
+        position: relative;
+    }
+
+    &__title {
+        line-height: 1.1;
+        margin: 0 0 14px;
+    }
+
+    &__subtitle {
+        font-size: 3rem;
+        margin: 0 0 5px;
+    }
+
+    &__text {
+        font-size: 2rem;
+        line-height: 1;
+        margin: 0 0 10px;
+
+        &--lg {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__desc {
+        margin-top: 30px;
+        margin-bottom: 29px;
+    }
+
+    &__image {
+        display: none;
+        position: absolute;
+        top: -1.3rem;
+        right: calc((100vw - 91%) / -2);
+
+        max-width: 572px;
+        width: 43vw;
+
+        @include breakpoints(s) {
+            display: block;
+        }
+
+        //@include breakpoints(1400px) {
+        //    right: -168px;
+        //}
+    }
+}
+

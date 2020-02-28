@@ -1,0 +1,8 @@
+.c-form {
+    $b: &;
+
+    &--rsvp {
+        max-width: 456px;
+        margin: 0 auto;
+    }
+}

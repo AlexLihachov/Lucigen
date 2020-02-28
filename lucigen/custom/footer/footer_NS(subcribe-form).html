@@ -1,0 +1,45 @@
+{* vim: set ts=2 sw=2 sts=2 et: *}
+{*--------------------*}
+{if $active_modules.Adv_Mailchimp_Subscription}
+{*--------------------*}
+
+<div class="f_underlined">
+    <h3 class="footer_title">{$lng.lbl_reboot_newsletter}</h3>
+</div>
+
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+{literal}
+<iframe src="https://www2.lgcgroup.com/l/31922/2018-10-16/gbfydd" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0">
+</iframe>
+{/literal}
+</div>
+
+{*--------------------*}
+{else}
+{*--------------------*}
+
+<a name="newsletter_subscribe" id="newsletter_subscribe"></a>
+
+<div class="f_underlined">
+    <h3 class="footer_title">{$lng.lbl_reboot_newsletter}</h3>
+</div>
+
+{*--------------------*}
+{/if}
+{*--------------------*}
+
+{if $config.Reboot.reboot_social_footer eq "Y"}
+
+<br>
+
+<div class="f_underlined">
+    <h3 class="footer_title">{$lng.lbl_reboot_social}</h3>
+</div>
+
+<div class="social-icons centered mt20">
+    {include file="custom/social_icons.tpl"}
+</div>
+
+{/if}
+

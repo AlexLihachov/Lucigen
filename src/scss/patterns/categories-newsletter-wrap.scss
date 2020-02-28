@@ -1,0 +1,19 @@
+.container.categories-newsletter-wrap--samples {
+    padding: 30px 10px;
+    font-size: 8px;
+
+    @include breakpoints(s) {
+        font-size: 9px;
+    }
+
+    @include breakpoints(m) {
+        font-size: 10px;
+    }
+
+    .txt {
+        display: block;
+        padding: 0 0 0 7px;
+        line-height: 1.5;
+        font-size: 2em;
+    }
+}

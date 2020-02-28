@@ -1,0 +1,131 @@
+<div class="root-categories-wrap">
+        <div class="row row-eq-height1">
+            <div class="col-md-1 root-categories-clmn-space"></div>
+            <div class="col-sm-4 col-md-3 root-categories-clmn-left">
+                <h2>{$current_category.category}</h2>
+
+                {if $current_category.subcats}
+                <div class="subcats-list">
+                    {foreach item=sc from=$current_category.subcats name=sc}
+                    <div class="level2-item">
+                        {if $sc.subcats}{$sc.category}{else}<a href="{$xcart_web_dir}/home.php?cat={$sc.categoryid}">{$sc.category}</a>{/if}
+                    </div>
+                    {if $sc.subcats}
+                    <div class="level3-items">
+                        {foreach item=ssc from=$sc.subcats}
+                        <div class="level3-item"><a href="{$xcart_web_dir}/home.php?cat={$ssc.categoryid}">{$ssc.category}</a></div>
+                        {/foreach}
+                    </div>
+                    {/if}
+                    {/foreach}
+                </div>
+                {/if}
+            </div>
+
+            {if $current_category.category === 'Competent Cells'}
+            <div class="col-sm-8 col-md-8 root-categories-clmn-right">
+            {else}
+            <div class="col-sm-8 col-md-7 root-categories-clmn-right">
+            {/if}
+
+                {if $current_category.description ne ""}
+                <div class="cat-descr">{$current_category.description}</div>
+                {/if}
+
+                {if $current_category.subcats}
+
+                {if $current_category.category === 'Competent Cells'}
+                <div class="row">
+                    <div class="col-sm-12 col-md-11">
+                {/if}
+
+                <div class="square-subcats-list clearfix">
+                    {foreach item=sc from=$current_category.subcats name=sc}{if $sc.subcats}
+                    <div class="level2-item">
+                        <h2>{$sc.category}</h2>
+                        <div class="level3-items clearfix">
+                            {foreach item=ssc from=$sc.subcats}
+                            <div class="level3-item"><div class="square">
+                                <div class="content-wrap"><div class="inner">
+                                    <div class="card1">
+                                        <div class="tbl">
+                                            <div class="clmn">
+                                                <div class="subcat-title">{$ssc.category}</div>
+                                                <div class="card-content">{$ssc.short_description}</div>
+                                                <div class="but-wrap"><a class="btn-custom1" href="{$xcart_web_dir}/home.php?cat={$ssc.categoryid}">View Products</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                            </div></div>
+                            {/foreach}
+                        </div>
+                    </div>
+                    {/if}{/foreach}
+                </div>
+
+                {literal}
+                <script type="text/javascript">
+                    LucigenLib.assetSquareCatIcons();
+                </script>
+                {/literal}
+                {/if}
+
+                {if $current_category.white_papers ne '' or $current_category.faqs ne ''}
+                <div class="cats-resources-faqs">
+                    {if $current_category.white_papers}
+                    <div class="resources-wrap">
+                        <h2>Cloning & Vectors Resources</h2>
+                        {$current_category.white_papers}
+                    </div>
+                    {/if}
+
+                    {if $current_category.faqs ne ''}
+                    <div class="faqs-wrap">
+                        <h2>Cloning & Vectors FAQs</h2>
+                        {$current_category.faqs}
+                    </div>
+                    {/if}
+
+                </div>
+                {/if}
+
+            </div>
+
+            {if $current_category.category === 'Competent Cells'}
+            </div>
+            </div>
+            {/if}
+
+            {if $current_category.category !== 'Competent Cells'}
+            <div class="col-md-1 root-categories-clmn-space"></div>
+            {/if}
+        </div>
+    </div>
+
+
+    <div class="cats-contact-us-wrap">
+        <div class="top-img"><img src="{$LucigenImagesDir}/contact-us.jpg" alt="" width="458" height="338" class="" /></div>
+        <div class="row row-eq-height2 no-gutters">
+            <div class="col-sm-4 clmn-left"><div class="img"></div></div>
+            <div class="col-sm-8 clmn-right"><div class="inner">
+                <h1>Have Questions?</h1>
+                <div class="p1">A Lucigen technical expert is happy to help!</div>
+                <div class="p2"><a class="btn-custom1" href="/help.php?section=contactus&mode=update">Contact Us</a></div>
+                <div class="p3">Or call <a href="tel:+1-888-575-9695">888-575-9695</a></div>
+            </div></div>
+        </div>
+    </div>
+
+    <div class="categories-newsletter-wrap">
+        <div class="txt">Sign up to receive technical advice and <br />exclusive deals directly to your inbox.</div>
+        <div class="email-signup-form">
+            <form method="post" action="mailchimp_news.php" name="categories_subscribeform">
+                <input type="hidden" name="subscribe_lng" value="en">
+                <div class="tbl inline-form-row">
+                    <div class="clmn clmn1"><input class="user-email" type="email" name="newsemail" placeholder="Enter your email address" autocomplete="off"></div>
+                    <div class="clmn clmn2"><button class="btn-custom1" type="submit">Sign Up</button></div>
+                </div>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,22 @@
+.videos-section {
+    padding-top: 8.3rem;
+    padding-bottom: 1.5rem;
+
+    &__title {
+        line-height: 1.2;
+        margin: 0 0 12px;
+    }
+
+    &__text {
+        line-height: 1.4;
+        margin: 0 0 10px;
+    }
+
+    &__content {
+        margin: 0 0 5rem;
+
+        @include breakpoints(s) {
+            margin: 0;
+        }
+    }
+}

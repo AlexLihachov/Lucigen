@@ -1,0 +1,68 @@
+.c-section {
+    $b: &;
+
+    &--samples {
+        width: 100%;
+        padding-top: 5em;
+        padding-bottom: 2em;
+        font-size: 8px;
+
+        & > .row {
+            margin: 0 -20px;
+        }
+
+        @include breakpoints(s) {
+            font-size: 9px;
+        }
+
+        @include breakpoints(m) {
+            font-size: 10px;
+        }
+
+        #{$b}__row {
+            margin-bottom: 3em;
+        }
+
+        #{$b}__col {
+            &--left {
+                @include breakpoints(s) {
+                    padding-right: 40px;
+                }
+            }
+
+            &--right {
+                @include breakpoints(s) {
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        left: -23px;
+                        width: 1px;
+                        height: 100%;
+                        background: #b7b7b7;
+                    }
+                }
+
+                @include breakpoints(m) {
+                    padding-right: 17px;
+                }
+            }
+        }
+
+        #{$b}__title {
+            margin: 0 0 30px;
+            font: {
+                size: 2.4em;
+                weight: bold;
+            };
+            line-height: 1.2;
+
+            &--s {
+                margin: 0 0 30px;
+                font-size: 2em;
+            }
+        }
+    }
+}

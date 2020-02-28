@@ -1,0 +1,38 @@
+.c-card {
+    $b: &;
+
+    &--product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin: 0 0 2rem;
+        background: #f3f2f2;
+        text-align: center;
+        border: 1px solid #b7b7b7;
+        border-radius: 4px;
+
+        @include breakpoints(s) {
+            min-height: 165px;
+            max-height: 165px;
+            height: 100%;
+        }
+
+        #{$b}__title {
+            font: {
+                size: 1rem;
+                weight: 700;
+            };
+            line-height: 1.5;
+
+            a {
+                text-decoration: none;
+                color: #000;
+
+                @include hocus() {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

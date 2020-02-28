@@ -1,0 +1,9 @@
+/* Form Section */
+.form-section {
+    margin: 0 -15px;
+    padding: 7rem 0;
+}
+
+.form-section__wrapper {
+    margin: 0 auto;
+}

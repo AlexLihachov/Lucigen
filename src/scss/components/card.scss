@@ -1,0 +1,46 @@
+.c-card {
+    $b: &;
+    
+    &--product {
+        margin: 0 0 3.2em;
+        padding: 10px 10px calc(2.102em + 10px);
+        background: #f3f2f2;
+        border: 1px solid #b7b7b7;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 8px;
+
+        @include breakpoints(s) {
+            font-size: 9px;
+        }
+
+        @include breakpoints(m) {
+            min-height: 261px;
+            font-size: 10px;
+            padding-bottom: 21px;
+        }
+        
+        #{$b}__title {
+            margin: 1.106em 10px 0.685em 10px;
+            font: {
+                size: 1.9em;
+                weight: bold;
+            };
+            line-height: 1.5;
+            letter-spacing: 0.4px;
+            
+            a {
+                color: #ca0813;
+            }
+        }
+        
+        #{$b}__text {
+            margin: 0;
+            font: {
+                size: 1.6em;
+                weight: normal;
+            };
+            line-height: 1.5;
+        }
+    }
+}

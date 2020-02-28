@@ -1,0 +1,140 @@
+.quote-section {
+    margin: 4.125rem 0 0
+}
+
+.quote-section__inner {
+    position: relative;
+    overflow: hidden;
+    color: #fefbfb
+}
+
+.quote-section__inner:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/skin/lucigen/images/lu-ccm-quote-first-section-bg.jpg);
+    background-position: 50%
+}
+
+@media only screen and (min-width: 768px) {
+    .quote-section__inner:before {
+        background-position: 0 -100px;
+        background-size: 114%
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .quote-section__inner:before {
+        background-position: -21px -128px;
+        background-size: 103%
+    }
+}
+
+.quote-section__content {
+    position: relative;
+    padding: 70px 10px
+}
+
+@media only screen and (min-width: 768px) {
+    .quote-section__content {
+        padding: 4.5625rem 0 12.9375rem 3.3125rem
+    }
+}
+
+.quote-section__content:before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 178%;
+    background-image: url(/skin/lucigen/images/lu-ccp-quote-second-section-bg.png);
+    background-position: -109px;
+    opacity: .8
+}
+
+@media only screen and (min-width: 768px) {
+    .quote-section__content:before {
+        opacity: 1;
+        background-size: 70%;
+        background-position: -126px -173px
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .quote-section__content:before {
+        background-position: -164px -203px
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .quote-section__content:before {
+        background-position: -174px -234px;
+        background-size: 62%
+    }
+}
+
+.quote-section__title {
+    margin: 0 0 1.125rem;
+    font-size: 1.75rem;
+    line-height: 1.35
+}
+
+.quote-section__text, .quote-section__title {
+    z-index: 2;
+    position: relative;
+    font-weight: 400
+}
+
+.quote-section__text {
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.4
+}
+
+.quote-section--strain {
+    margin-top: 4.625rem
+}
+
+.quote-section--strain .quote-section__inner:before {
+    background-image: url(/skin/lucigen/images/vu-ccn-strain-section-bg.jpg)
+}
+
+@media only screen and (min-width: 1200px) {
+    .quote-section--strain .quote-section__inner:before {
+        background-position: -20px -156px
+    }
+}
+
+.quote-section--strain .quote-section__title {
+    margin-bottom: .875rem;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.4
+}
+
+.quote-section--strain .quote-section__text {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    line-height: 1.25
+}
+
+@media only screen and (min-width: 768px) {
+    .quote-section--strain .quote-section__content {
+        padding: 3.0625rem 0 12.375rem 6rem
+    }
+}
+
+.quote-section--strain .quote-section__link {
+    z-index: 2;
+    position: relative
+}

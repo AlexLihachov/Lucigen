@@ -1,0 +1,15 @@
+html {
+    font-size: 10px;
+
+    @include breakpoints(s) {
+        font-size: 12px;
+    }
+
+    @include breakpoints(m) {
+        font-size: 14px;
+    }
+
+    @include breakpoints(l) {
+        font-size: 16px;
+    }
+}

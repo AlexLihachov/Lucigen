@@ -1,0 +1,117 @@
+.areas-section {
+    background: #f2f1f1;
+    padding-top: 3.5625rem;
+    padding-bottom: 4.5625rem;
+
+    &__title {
+        margin: 0 0 0.9125rem;
+        text-align: center;
+        font: {
+            size: 2.125rem;
+            weight: 400;
+        };
+        line-height: 1.4;
+    }
+
+    &__subtitle {
+        margin: 0 0 1rem;
+        font: {
+            size: 1.875rem;
+            weight: 700;
+        };
+        line-height: 1.35;
+
+        &--last {
+            margin: 0 0 1.125rem;
+        }
+    }
+
+    &__inner {
+        text-align: left;
+    }
+
+    &__image-wrapper {
+        margin: 0 0 1.35rem;
+        text-align: center;
+
+        @include breakpoints(s) {
+            text-align: left;
+            min-height: 213px;
+        }
+
+        @include breakpoints(m) {
+            min-height: 262px;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+
+        &--first {
+            @include breakpoints(l) {
+                margin: 7px 0 -1px 0px;
+            }
+        }
+
+        &--second {
+            @include breakpoints(l) {
+                margin: 22px 0 8px 0;
+            }
+        }
+
+        &--third {
+            @include breakpoints(l) {
+                margin: 0 0 10px;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        margin-bottom: 20px;
+        @include breakpoints(s) {
+            margin-bottom: 0;
+        }
+
+        &--dividers {
+            &:after, &:before {
+                display: none;
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background: #b7b7b7;
+                top: 233px;
+
+                @include breakpoints(s) {
+                    display: block;
+                }
+
+                @include breakpoints(m) {
+                    top: 282px;
+                }
+
+                @include breakpoints(l) {
+                    top: 290px;
+                }
+            }
+
+            &:after {
+                right: 0;
+                @include breakpoints(l) {
+                    right: 33px;
+                }
+            }
+
+            &:before {
+                left: 0;
+                @include breakpoints(l) {
+                    left: -32px;
+                }
+            }
+
+        }
+    }
+}

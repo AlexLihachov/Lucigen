@@ -1,0 +1,70 @@
+.contact-section {
+    margin: 4.4375rem 0 0;
+    padding: 5.6875rem 0 0;
+    background: #f2f1f1;
+    text-align: left;
+    overflow: hidden;
+
+    &__title {
+        margin: 0 0 1.4375rem;
+        font: {
+            weight: 700;
+            size: 1.875rem;
+        };
+        line-height: 1.2;
+    }
+
+    &__text {
+        margin: 0 0 2.3125rem;
+        font: {
+            size: 1.25rem;
+            weight: 400;
+        };
+        line-height: 1.4;
+
+        &--footer {
+            margin: 0;
+            line-height: 1.9;
+            letter-spacing: .1px;
+        }
+    }
+
+    &__link {
+        margin: 0 0 4.5625rem;
+    }
+
+    &__image-box {
+        margin: 0 -15px;
+        text-align: right;
+    }
+
+    &__image {
+        position: relative;
+        max-width: 100%;
+        max-height: 350px;
+        height: auto;
+        bottom: -5px;
+        right: -20px;
+
+        @include breakpoints(s) {
+            right: 0;
+            margin-right: calc((100vw - 750px + 5px) / -2);
+        }
+
+        @include breakpoints(m) {
+            margin-right: calc((100vw - 970px + 10px) / -2);
+            max-height: 100%;
+        }
+
+        @include breakpoints(l) {
+            margin-right: calc((100vw - 1170px + 15px) / -2);
+        }
+
+        @include breakpoints(1366px) {
+            max-width: 600px;
+            margin-right: 0;
+            margin-left: 13px;
+            margin-top: -60px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.c-link {
+    color: #258b99;
+    transition: color .2s ease-in;
+
+    @include hocus() {
+        color: darken(#258b99, 10);
+    }
+
+    &--white {
+        color: #fff;
+
+        @include hocus() {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.container .cats-contact-us-wrap--samples {
+    font-size: 8px;
+
+    @include breakpoints(s) {
+        font-size: 9px;
+    }
+
+    @include breakpoints(m) {
+        font-size: 10px;
+    }
+
+    .img {
+        margin-right: 16px;
+    }
+
+    .clmn-right .inner {
+        padding: 20px 15px;
+
+        @include breakpoints(m) {
+            padding: 5.5em 5em 6.3em 11.2em;
+        }
+    }
+
+    .clmn-right h1 {
+        padding: 0 0 21px 0;
+        font-size: 3em;
+        line-height: 1.1;
+    }
+
+    .clmn-right .p1 {
+        font-size: 2em;
+        line-height: 1.7;
+        padding-bottom: 17px;
+    }
+}

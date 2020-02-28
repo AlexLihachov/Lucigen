@@ -1,0 +1,88 @@
+.c-header {
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    justify-content: space-between;
+
+    &__iso {
+        max-width: 30%;
+        position: relative;
+        @include breakpoints(xs) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            padding-left: 20px;
+            max-height: 64px;
+
+            @include breakpoints(xs) {
+                padding: 0 20px 0 0;
+            }
+        }
+
+        span {
+            display: block;
+            font-family: 'Arial', sans-serif;
+            font-size: 7px;
+            float: right;
+            text-align: right;
+
+            @include breakpoints(xs) {
+                font-size: 9px;
+            }
+
+            @include breakpoints(s) {
+                float: none;
+                margin: 2px 20px 0 0;
+            }
+        }
+    }
+
+    &__logos {
+        display: flex;
+        align-items: center;
+
+        @include breakpoints(s) {
+            padding-top: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            padding-top: 4px;
+            max-height: 100%;
+
+            &:first-child {
+                padding-right: 1px;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 38px;
+                    width: 1px;
+                    background: #706f6f;
+                    position: absolute;
+                    top: 5px;
+                    right: 1px;
+                }
+            }
+
+            &:last-child {
+                padding-left: 20px;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

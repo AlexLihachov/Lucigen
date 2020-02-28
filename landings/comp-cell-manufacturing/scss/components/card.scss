@@ -1,0 +1,87 @@
+.c-card {
+    $b: &;
+
+    &--benefit {
+        margin: 0 0 1.875rem;
+        padding: 2rem 1.25rem 2rem 2.125rem;
+        background: #f3f2f2;
+        border: 1px solid #b7b7b7;
+        border-radius: 5px;
+        text-align: left;
+
+        @include breakpoints(s) {
+            min-height: 13.25rem;
+        }
+
+        #{$b}__title {
+            margin: 0 0 0.8125rem;
+            font: {
+                size: 1.5rem;
+                weight: 700;
+            };
+            line-height: 1.3;
+        }
+
+        #{$b}__text {
+            font: {
+                size: 1rem;
+                weight: 400;
+            }
+        ;
+            line-height: 1.5;
+        }
+    }
+
+    &--product {
+        margin: 0 0 19px;
+        font-size: 8px;
+
+        @include breakpoints(s) {
+            font-size: 7px;
+        }
+
+        @include breakpoints(m) {
+            font-size: 9px;
+        }
+
+        @include breakpoints(l) {
+            font-size: 10px;
+        }
+
+        #{$b}__title {
+            margin: 0 0 5px;
+            font: {
+                size: 2em;
+                weight: 400;
+            };
+            line-height: 1.5;
+
+            &--no-m {
+                margin: 0;
+            }
+        }
+
+        #{$b}__text {
+            font: {
+                size: 2em;
+                weight: 400;
+            }
+        ;
+            line-height: 1.5;
+        }
+
+        @include breakpoints(s) {
+            &-first-colmn {
+                margin: 0 0 37px;
+            }
+
+            &-second-colmn {
+                margin: 0 0 39px;
+            }
+
+            &-third-colmn {
+                margin: 0 0 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.c-link {
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #258b99;
+    border-bottom: 1px solid #258b99;
+    transition: all .2s ease-in;
+
+    @include hocus() {
+        color: darken(#258b99, 15%);
+        border-bottom-color: darken(#258b99, 15%);
+    }
+
+    &--white {
+        font-size: 2.4rem;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        @include hocus() {
+            color: #258b99;
+            border-bottom-color: #258b99;
+        }
+    }
+
+    &--sm {
+        font-size: 1.8rem;
+    }
+
+    &--with-mb {
+        margin: 0 0 1rem;
+    }
+}

@@ -1,0 +1,36 @@
+.button {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+
+    &--red {
+        background: #ca0813;
+        transition: background-color .2s ease-in;
+        color: #fff;
+
+        @include hocus() {
+            background: darken(#ca0813, 10);
+        }
+    }
+
+    &--s {
+        padding: 1.25rem 2.625rem;
+        text-align: center;
+        font: {
+            size: 0.9375rem;
+            weight: 700;
+        };
+        line-height: 1.36;
+        border-radius: 5px;
+    }
+
+    &--m {
+        padding: 1.375rem 2.75rem;
+        font: {
+            size: 1.125rem;
+            weight: 700;
+        };
+        line-height: 1.33;
+        border-radius: 5px;
+    }
+}

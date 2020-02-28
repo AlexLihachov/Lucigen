@@ -1,0 +1,14 @@
+.c-header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    @include breakpoints(s) {
+        padding: 2.7rem 0 2.1rem;
+    }
+
+    &__logo {
+        display: block;
+        width: auto;
+    }
+}

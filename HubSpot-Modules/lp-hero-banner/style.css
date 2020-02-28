@@ -1,0 +1,132 @@
+/* Hero Banner */
+
+.hero-banner {
+    margin: 0 -15px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    overflow: hidden;
+    background: linear-gradient(top, #62c9c7, #027c8d);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#62c9c7), to(#027c8d));
+    background: -webkit-linear-gradient(top, #62c9c7, #027c8d);
+    background: -moz-linear-gradient(top, #62c9c7, #027c8d);
+    background: -o-linear-gradient(top, #62c9c7, #027c8d);
+    background: -ms-linear-gradient(top, #62c9c7, #027c8d);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#62c9c7', endColorstr='#027c8d', GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c9c7',endColorstr='#027c8d')";
+
+    color: #fff;
+}
+
+.hero-banner__content h1 {
+    margin: 0 0 2.7rem;
+
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+.hero-banner__content h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.53;
+}
+
+.hero-banner__content p {
+    margin: 0 0 10px;
+
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero-banner__content a {
+    display: inline-block;
+
+    padding: 1.6rem 2.9rem;
+
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.hero-banner__content a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.hero-banner__image {
+    display: none;
+}
+
+.hero-banner__image-svg {
+    display: none;
+}
+
+/* Quote styles */
+
+.hero-banner__quote-wrapper {
+    position: relative;
+    margin: 0 0 40px;
+}
+
+.hero-banner__quote {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: 0;
+    transform: translateY(-50%);
+
+    width: 100%;
+    max-width: 72%;
+}
+
+.hero-banner__quote h3 {
+    font-size: 2.8rem;
+    margin: 0 0 3rem;
+}
+
+.hero-banner__quote p {
+    font-size: 2.4rem;
+    margin: 0 0 1.2rem;
+}
+
+.hero-banner__quote p:last-of-type {
+    margin-bottom: 0;
+}
+
+.hero-banner__quote-wrapper .hero-banner__image {
+    max-width: 350px;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-banner .row {
+        align-items: center;
+    }
+
+    .hero-banner__image {
+        display: block;
+    }
+
+    .hero-banner--right .row {
+        flex-direction: row-reverse;
+    }
+
+    .hero-banner__quote-wrapper {
+        margin: 0;
+    }
+
+    .hero-banner__quote-wrapper .hero-banner__image {
+        max-width: 400px;
+    }
+}

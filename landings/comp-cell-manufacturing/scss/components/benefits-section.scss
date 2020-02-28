@@ -1,0 +1,47 @@
+.benefits-section {
+    padding: 3.8125rem 3.125rem 3.1125rem 3.125rem;
+    text-align: center;
+
+    &__title {
+        margin: 0 0 3.375rem;
+        font: {
+            weight: 400;
+            size: 2.125rem;
+        };
+        line-height: 1.4;
+    }
+
+    &__inner {
+        @include breakpoints(s) {
+            margin: -7px 0 0 0;
+        }
+    }
+
+    &__subtitle {
+        margin: 0 0 0.75rem;
+        text-align: center;
+        font: {
+            weight: 700;
+            size: 1.875rem;
+        };
+        line-height: 1.2;
+
+        @include breakpoints(s) {
+            margin: 0 -12px 0.75rem 0;
+        }
+    }
+
+    &__text {
+        margin: 0 0 1.625rem;
+        text-align: center;
+        font: {
+            weight: 400;
+            size: 1rem;
+        };
+        line-height: 1.5;
+
+        @include breakpoints(s) {
+            margin: 0 -12px 1.625rem 0;
+        }
+    }
+}

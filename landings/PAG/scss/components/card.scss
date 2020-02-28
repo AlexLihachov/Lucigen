@@ -1,0 +1,82 @@
+.c-card {
+    $b: &;
+
+    &--areas {
+        position: relative;
+        margin: 0 0 20px;
+        text-align: left;
+
+        @include breakpoints(s) {
+            margin: 0;
+        }
+
+        #{$b}__image-wrapper {
+            margin: 0 0 2.55rem;
+            text-align: center;
+
+            @include breakpoints(s) {
+                min-height: 190px;
+                text-align: left;
+            }
+
+            @include breakpoints(m) {
+                min-height: 251px;
+            }
+        }
+
+        #{$b}__image {
+            display: inline-block;
+        }
+
+        #{$b}__title {
+            margin: 0 0 2.1rem;
+        }
+
+        #{$b}__text {
+            margin: 0 0 1.8rem;
+            line-height: 1.5;
+
+            &:last-of-type {
+                margin: 0 0 2.3rem;
+            }
+        }
+    }
+
+    &--areas-dividers {
+        &:after, &:before {
+            display: none;
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background: #b7b7b7;
+            top: 210px;
+
+            @include breakpoints(s) {
+                display: block;
+            }
+
+            @include breakpoints(m) {
+                top: 275px;
+            }
+
+            @include breakpoints(l) {
+                top: 281px;
+            }
+        }
+
+        &:after {
+            right: 0;
+            @include breakpoints(l) {
+                right: 14px;
+            }
+        }
+
+        &:before {
+            left: 0;
+            @include breakpoints(l) {
+                left: -16px;
+            }
+        }
+    }
+}

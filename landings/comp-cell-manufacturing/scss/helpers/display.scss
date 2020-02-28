@@ -1,0 +1,61 @@
+.d {
+    &-b {
+        display: block;
+    }
+
+    &-i {
+        display: inline;
+    }
+
+    &-n {
+        display: none;
+    }
+
+    &-sm {
+        @include breakpoints(s) {
+            &-b {
+                display: block;
+            }
+
+            &-i {
+                display: inline;
+            }
+
+            &-n {
+                display: none;
+            }
+        }
+    }
+
+    &-m {
+        @include breakpoints(m) {
+            &-b {
+                display: block;
+            }
+
+            &-i {
+                display: inline;
+            }
+
+            &-n {
+                display: none;
+            }
+        }
+    }
+
+    &-l {
+        @include breakpoints(l) {
+            &-b {
+                display: block;
+            }
+
+            &-i {
+                display: inline;
+            }
+
+            &-n {
+                display: none;
+            }
+        }
+    }
+}

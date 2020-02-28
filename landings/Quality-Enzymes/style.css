@@ -1,0 +1,969 @@
+/* START: Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* END: Reset */
+
+
+/* START: Layout General */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    font-weight: 400;
+    color: #000;
+}
+
+a {
+    color: #258b99;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #000;
+}
+
+strong {
+    font-weight: 700;
+}
+
+sup {
+    font-size: 80%;
+    vertical-align: super;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.inner {
+    max-width: 1142px;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image {
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.button--red {
+    padding: 20px 59px;
+    border-radius: 5px;
+    color: #fff;
+    background: #ca0813;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.button--red:hover {
+    background: #bb0712;
+}
+
+.button--s {
+    padding: 21px 35px;
+}
+/* END: Layout General */
+
+/* START: Helpers */
+.position-relative {
+    position: relative;
+}
+/* END: Helpers */
+
+
+/* START: Header */
+.header {
+    padding: 11px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__item {
+    display: flex;
+    align-items: center;
+}
+
+.header__item:last-child {
+    padding-right: 20px;
+}
+/* END: Header */
+
+
+/* START: Logo Biosearch */
+.logo-biosearch {
+    display: block;
+    width: 177px;
+    height: 51px;
+    background-image: url('/skin/lucigen/images/logo-biosearch.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+/* END: Logo Biosearch */
+/* START: Logo Lucigen */
+.logo-lucigen {
+    display: block;
+    width: 121px;
+    height: 44px;
+    background-image: url('/skin/lucigen/images/logo-lucigen.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* END: Logo Lucigen */
+
+
+/* START: Intro Banner */
+.intro-banner {
+    padding: 82px 0;
+    background: #62c9c7;
+    background: -moz-linear-gradient(top, #62c9c7 0%, #027c8d 100%);
+    background: -webkit-linear-gradient(top, #62c9c7 0%,#027c8d 100%);
+    background: linear-gradient(to bottom, #62c9c7 0%,#027c8d 100%);
+}
+
+.intro-banner__bg-image {
+    width: 457px;
+    height: 379px;
+    position: absolute;
+    left: 0;
+    bottom: -44px;
+}
+
+.intro-banner__inner {
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 190px;
+    text-align: center;
+}
+
+.intro-banner__title {
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #fff;
+    margin: 1px 0 24px;
+}
+
+.intro-banner__text {
+    margin-bottom: 7px;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 400;
+    color: #fff;
+}
+/* END: Intro Banner */
+
+
+/* START: Enzyme Semple */
+.enzyme-semple {
+    padding: 101px 0 68px;
+}
+
+.enzyme-semple__bg-image {
+    width: 490px;
+    height: 450px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.enzyme-semple__inner {
+    max-width: 750px;
+}
+
+.enzyme-semple__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.enzyme-semple__text {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 19px;
+}
+
+.enzyme-semple__text:last-child {
+    margin-bottom: 0;
+}
+
+.enzyme-semple__footer {
+    margin: 51px 0 0;
+}
+/* END: Enzyme Semple */
+
+
+/* START: Testimonial */
+.testimonial {
+    position: relative;
+    padding: 55px 0 85px 0;
+    background-image: url('/skin/lucigen/images/testimonial-bg.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 1621px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial {
+        background-size: auto;
+        background-position: 74% 0;
+    }
+}
+
+.testimonial__bg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background: rgba(235,95,19,1);
+    background: -moz-linear-gradient(left, rgba(235,95,19,1) 0%, rgba(240,171,24,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(235,95,19,1) 0%, rgba(240,171,24,1) 100%);
+    background: -o-linear-gradient(left, rgba(235,95,19,1) 0%, rgba(240,171,24,1) 100%);
+    background: -ms-linear-gradient(left, rgba(235,95,19,1) 0%, rgba(240,171,24,1) 100%);
+    background: linear-gradient(to right, rgba(235,95,19,1) 0%, rgba(240,171,24,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb5f13', endColorstr='#f0ab18', GradientType=1 );
+}
+
+@media screen and (min-width: 992px) {
+    .testimonial__bg {
+        display: none;
+    }
+}
+
+.testimonial__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 574px;
+    margin-left: auto;
+    margin-top: 22px;
+}
+
+.testimonial__text {
+    font-size: 26px;
+    line-height: 38px;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+.testimonial__author {
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    color: #fff;
+    margin: 13px 1px 18px;
+    letter-spacing: 0;
+}
+/* END: Testimonial */
+
+
+/* START: Polymerases */
+.polymerases {
+    padding: 81px 0 69px;
+}
+
+.polymerases__title {
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 53px;
+}
+
+.polymerases__grid {
+    display: flex;
+}
+
+.polymerases__grid-item {
+    box-sizing: border-box;
+}
+
+.polymerases__grid-item:first-child {
+    width: 48%;
+    padding-right: 30px;
+}
+
+.polymerases__grid-item:last-child {
+    width: 52%;
+}
+
+.polymerases__list-title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 27px;
+}
+
+.polymerases__list-title--white {
+    color: #fff;
+}
+
+.polymerases__list-item {
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 40px;
+    min-height: 25px;
+    background-image: url('/skin/lucigen/images/icon-check.png');
+    background-position: 2px 1px;
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+}
+
+.polymerases__list-item--white {
+    background-image: url('/skin/lucigen/images/icon-check-white.png');
+    color: #fff;
+}
+
+.polymerases__list-item:nth-child(2n+2) {
+    font-weight: 700;
+}
+
+.polymerases__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.polymerases__list-item--pl {
+    padding-left: 46px;
+}
+
+.polymerases--second {
+    padding: 66px 0 52px;
+}
+/* END: Polymerases */
+
+
+/* START: Products List */
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+
+.products-list__item {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background-color: #f3f2f2;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    margin: 0 0 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.products-list__item--secondary {
+    padding: 20px;
+}
+
+.products-list {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .products-list__item {
+        width: 166px;
+        height: 165px;
+        margin: 21px -6px 11px 36px;
+        padding: 56px 0 0 0;
+    }
+
+    .products-list__item--secondary {
+        padding: 40px 0 0 0;
+    }
+
+    .products-list {
+        margin: -15px -15px 0 0;
+    }
+
+    .products-list__item--ligases {
+        padding: 44px 0 0 0;
+    }
+
+    .products-list__item--ligases.products-list__item--first {
+        padding-top: 39px;
+    }
+
+    .products-list__text--ligases {
+        margin-top: 10px;
+    }
+
+    .products-list--nucleases .products-list__item--first {
+        padding: 34px 0 0 0;
+    }
+
+    .products-list--nucleases .products-list__item--first .products-list__text {
+        margin: 9px 0 0;
+    }
+
+    .products-list--nucleases .products-list__item--second {
+        padding: 38px 0 0;
+    }
+
+    .products-list--nucleases .products-list__item--fourth .products-list__text {
+        margin: 5px 0 0;
+    }
+}
+
+.products-list__item--title {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.products-list__main-title {
+    margin: -1px 0 0 -1px;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.products-list__link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.products-list__link:hover,
+.products-list__link:hover .products-list__title,
+.products-list__link:hover .products-list__text {
+    color: #258b99;
+}
+
+.products-list__title {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.products-list__title--ligases {
+    line-height: 1.4;
+}
+
+.products-list__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 8px;
+    text-align: center;
+    letter-spacing: -0.2px;
+}
+/* END: Products List */
+
+
+/* START: Ligases */
+.ligases {
+    padding: 69px 0 78px;
+    background-image: url('/skin/lucigen/images/ligases-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ligases__products-title {
+    color: #fff;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 28px;
+    padding-left: 36px;
+}
+/* END: Ligases */
+
+
+/* START: Banner */
+.banner {
+    padding: 0 0 72px;
+}
+
+.banner__inner {
+    padding: 47px 0 253px 98px;
+    background-image: url('/skin/lucigen/images/banner-bg.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner__content {
+    max-width: 360px;
+}
+
+.banner__title {
+    font-size: 34px;
+    line-height: 48px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.banner__text {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.banner__text a {
+    color: #fff;
+}
+/* END: Banner */
+
+
+/* START: Contact Us */
+.contact-us {
+    background-color: #f2f1f1;
+    padding: 90px 0;
+}
+
+.contact-us__bg-image {
+    width: 589px;
+    height: 466px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.contact-us__inner {
+    max-width: 450px;
+    padding-left: 97px;
+}
+
+.contact-us__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 23px;
+}
+
+.contact-us__text {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+.contact-us__text--first {
+    margin-bottom: 43px;
+}
+
+.contact-us__text--second {
+    margin-bottom: 30px;
+}
+
+.contact-us__text--third {
+    margin-left: 4px;
+}
+
+.contact-us__text:last-child {
+    margin-bottom: 0;
+}
+
+.contact-us__text a {
+
+}
+/* END: Contact Us */
+
+
+/* START: Intro Banner */
+.sss {
+}
+/* END: Intro Banner */
+
+
+/* START: Media Queries */
+@media screen and (max-width: 1399px) {
+    /* START: Intro Banner */
+    .intro-banner__bg-image {
+        width: 400px;
+        height: 333px;
+    }
+    /* END: Intro Banner */
+    /* START: Enzyme Semple */
+    .enzyme-semple__bg-image {
+        width: 490px;
+        height: 450px;
+    }
+    /* END: Enzyme Semple */
+}
+
+
+@media screen and (max-width: 1320px) {
+    /* START: Intro Banner */
+    .intro-banner__bg-image {
+        width: 350px;
+        height: 292px;
+    }
+    /* END: Intro Banner */
+}
+
+@media screen and (max-width: 1250px) {
+    /* START: Enzyme Semple */
+    .enzyme-semple__bg-image {
+        width: 470px;
+        height: 432px;
+    }
+    /* END: Enzyme Semple */
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* START: Intro Banner */
+    .intro-banner__bg-image {
+        width: 300px;
+        height: 250px;
+        bottom: -25px;
+    }
+    /* END: Intro Banner */
+    /* START: Enzyme Semple */
+    .enzyme-semple__bg-image {
+        width: 400px;
+        height: 367px;
+    }
+    /* END: Enzyme Semple */
+    /* START: Polymerases */
+    .polymerases__grid-item:first-child {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .polymerases__grid-item:last-child {
+        width: 100%;
+    }
+    /* END: Polymerases */
+    /* START: Contact Us */
+    .contact-us__inner {
+        padding-left: 0;
+    }
+    /* END: Contact Us */
+    /* START: Products */
+    .products-list {
+        justify-content: flex-start;
+    }
+    /* START: Products */
+}
+
+
+@media screen and (max-width: 1120px) {
+    /* START: Enzyme Semple */
+    .enzyme-semple__bg-image {
+        width: 350px;
+        height: 321px;
+    }
+    /* END: Enzyme Semple */
+}
+
+
+@media screen and (max-width: 1060px) {
+    /* START: Enzyme Semple */
+    .enzyme-semple__bg-image {
+        width: 310px;
+        height: 285px;
+    }
+    /* END: Enzyme Semple */
+}
+
+
+@media screen and (max-width: 992px) {
+    /* START: Intro Banner */
+    .intro-banner__inner {
+        padding-left: 0;
+    }
+    .intro-banner__bg-image {
+        display: none;
+    }
+    .intro-banner__title {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .intro-banner__text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    /* END: Intro Banner */
+    /* START: Enzyme Semple */
+    .enzyme-semple {
+        padding: 65px 0;
+    }
+    .enzyme-semple__inner {
+        max-width: 100%;
+    }
+    .enzyme-semple__bg-image {
+        display: none;
+    }
+    .enzyme-semple__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .enzyme-semple__text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    /* END: Enzyme Semple */
+    /* START: Testimonial */
+    .testimonial__text {
+        font-size: 20px;
+        line-height: 28px
+    }
+    .testimonial__author {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    /* END: Testimonial */
+    /* START: Polymerases */
+    .polymerases__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .polymerases__grid {
+        flex-direction: column;
+    }
+    .polymerases__grid-item {
+        width: 100%;
+    }
+    .polymerases__grid-item:first-child {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .polymerases__grid-item:last-child {
+        padding-left: 0;
+    }
+    .polymerases__list-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .polymerases__list-item {
+        font-size: 18px;
+        line-height: 24px;
+        background-position: 0 0;
+    }
+    /* END: Polymerases */
+    /* START: Ligases */
+    .ligases__products-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    /* END: Ligases */
+    /* START: Banner */
+    .banner__inner {
+        padding: 30px 0 250px 50px;
+    }
+    .banner__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .banner__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    /* END: Banner */
+    /* START: Contact Us */
+    .contact-us__bg-image {
+        width: 350px;
+        height: 277px;
+    }
+    .contact-us__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .contact-us__text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    /* END: Contact Us */
+}
+
+
+@media screen and (max-width: 600px) {
+    /* START: Header */
+    .header__inner {
+        flex-direction: column;
+    }
+    .header__item {
+        justify-content:  center;
+    }
+    .header__item:first-child {
+        margin-bottom: 20px;
+    }
+    .header__item:last-child {
+        padding-right: 0;
+    }
+    /* END: Header */
+    /* START: Testimonial */
+    .testimonial {
+        padding: 70px 0;
+    }
+    /* END: Testimonial */
+    /* START: Logo Biosearch */
+    .logo-biosearch {
+        width: 150px;
+        height: 43px;
+    }
+    /* END: Logo Biosearch */
+    /* START: Logo Biosearch */
+    .logo-lucigen {
+        width: 100px;
+        height: 36px;
+    }
+    /* END: Logo Biosearch */
+    /* START: Banner */
+    .banner__inner {
+        padding: 20px;
+    }
+    /* END: Banner */
+    /* START: Contact Us */
+    .contact-us__bg-image {
+        display: none;
+    }
+    /* END: Contact Us */
+}
+
+
+@media screen and (max-width: 458px) {
+    /* START: Products */
+    .products-list {
+        justify-content: center;
+    }
+    /* START: Products */
+}
+/* END: Media Queries */
+
+.h-d-inline-l {
+    display: none;
+}
+
+@media screen and (min-width: 1400px) {
+    .h-d-inline-l {
+        display: inline;
+    }
+}
+
+.c-header {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    justify-content: space-between; }
+.c-header__iso {
+    max-width: 30%;
+    position: relative; }
+@media (min-width: 544px) {
+    .c-header__iso {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+.c-header__iso img {
+    max-width: 100%;
+    padding-left: 20px;
+    max-height: 64px;
+    box-sizing: border-box}
+@media (min-width: 768px) {
+    .c-header__iso img {
+        padding: 0 20px 0 0; } }
+.c-header__iso span {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    font-size: 7px;
+    float: right;
+    text-align: right; }
+@media (min-width: 544px) {
+    .c-header__iso span {
+        font-size: 9px; } }
+@media (min-width: 768px) {
+    .c-header__iso span {
+        float: none;
+        margin: 2px 20px 0 0; } }
+.c-header__logos {
+    display: flex;
+    align-items: center; }
+.c-header__logos a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-top: 4px;
+    max-height: 100%; }
+.c-header__logos a:first-child {
+    padding-right: 1px; }
+.c-header__logos a:first-child:after {
+    content: '';
+    display: block;
+    height: 38px;
+    width: 1px;
+    background: #706f6f;
+    position: absolute;
+    top: 5px;
+    right: 1px; }
+.c-header__logos a:last-child {
+    padding-left: 20px; }
+.c-header__logos a img {
+    max-width: 100%; }
+
+
+.lu-page-container {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto; }
+@media (min-width: 1430px) {
+    .lu-page-container {
+        padding: 0 15px; } }

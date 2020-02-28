@@ -1,0 +1,50 @@
+.c-form {
+    $b: &;
+
+    &--newsletter-big:last-of-type {
+        margin: 20px 0 0 0;
+
+        @include breakpoints(s) {
+            margin: 0;
+        }
+
+        #{$b}__input {
+            width: 89%;
+            height: 45px;
+            padding: 10px 10px 10px 25px;
+            font: {
+                size: 15px;
+                weight: normal;
+            };
+
+            @include breakpoints(s) {
+                height: 55px;
+                font-size: 16px;
+            }
+
+            @include breakpoints(m) {
+                height: 61px;
+                padding: 10px 10px 10px 25px;
+                font-size: 18px;
+            }
+        }
+
+        #{$b}__submit {
+            height: 45px;
+            font: {
+                size: 15px;
+                weight: bold;
+            };
+
+            @include breakpoints(s) {
+                height: 55px;
+                font-size: 16px;
+            }
+
+            @include breakpoints(m) {
+                height: 61px;
+                font-size: 18px;
+            }
+        }
+    }
+}

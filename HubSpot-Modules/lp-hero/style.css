@@ -1,0 +1,165 @@
+.hero {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    margin: 0 -15px;
+    padding: 50px 0 0;
+    max-height: 800px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Row */
+.hero .row {
+    height: 100%;
+}
+
+@media screen  and (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .hero .row {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Content block */
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__content {
+        padding-bottom: 12%;
+    }
+}
+
+/* Subtitle */
+.hero__subtitle {
+    width: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+/* Button */
+.hero__button {
+    display: inline-block;
+    padding: 1rem 2.9rem;
+    text-decoration: none;
+    text-align: center;
+    outline: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.hero__button:focus, .hero__button:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+/* Logo */
+.hero__logo {
+    display: none;
+    justify-content: flex-end;
+    padding-top: 10%;
+}
+
+.hero__logo img {
+    max-width: 80px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__logo {
+        display: flex;
+    }
+}
+
+
+/* Title */
+.hero__title {
+    position: relative;
+    margin: 0 0 60px;
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__title {
+        margin: 0;
+        font-size: 3.6vw;
+    }
+}
+
+/* Shape */
+.hero__shape {
+    padding: 0 15px;
+}
+
+.hero__shape:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: .7;
+    background-image: linear-gradient(90deg, rgb(0, 120, 138) 0%, rgb(103, 200, 199) 100%);
+}
+
+@media screen and (min-width: 768px) {
+    .hero__shape {
+        position: absolute;
+        top: 0;
+        left: 6%;
+
+        width: 34vw;
+        height: auto;
+        padding: 4vw 2vw;
+    }
+
+    .hero__shape:before {
+        left: -10%;
+        width: 125%;
+        height: 125%;
+
+        opacity: 1;
+        background-image: url(https://info.biosearchtech.com/hubfs/Image/blue-shape-png-MDx.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .hero__shape {
+        width: 476px;
+        padding: 56px 28px;
+        left: calc((100vw - 1200px) / 2 - 16px );
+    }
+
+    .hero__title {
+        font-size: 50px;
+    }
+}

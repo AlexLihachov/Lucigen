@@ -1,0 +1,32 @@
+.c-hero-banner {
+    margin: -20px -20px 0 -20px;
+    padding: 4.4em 15px 5em 15px;
+    text-align: center;
+    background: #f3f2f2;
+    font-size: 8px;
+
+    @include breakpoints(s) {
+        font-size: 9px;
+    }
+
+    @include breakpoints(m) {
+        font-size: 10px;
+    }
+
+    &__title {
+        margin: 0 0 12px;
+        color: $red;
+        font: {
+            size: 4.5em;
+        };
+        line-height: 1.2;
+    }
+
+    &__text {
+        margin: 0;
+        font: {
+            size: 2.2em;
+        };
+        line-height: 1.2;
+    }
+}

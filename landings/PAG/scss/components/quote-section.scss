@@ -1,0 +1,100 @@
+.quote-section {
+    margin: 7.8rem 0 8.4rem 0;
+
+    &__inner {
+        position: relative;
+        overflow: hidden;
+        color: #fdfbfb;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(get('bgiUrl.chickens'));
+            background-position: 50%;
+
+            @include breakpoints(s) {
+                background-position: 0 -100px;
+                background-size: cover;
+            }
+
+            @include breakpoints(l) {
+                background-position: 0 -154px;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding: 70px 10px;
+
+        @include breakpoints(s) {
+            padding: 6.1625rem 0 25.075rem 5rem;
+        }
+
+        &:before {
+            z-index: 1;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: 178%;
+            background-image: url(get('bgiUrl.quoteSection'));
+            background-position: -109px;
+            opacity: .8;
+
+            @include breakpoints(s) {
+                opacity: 1;
+                background-size: 70%;
+                background-position: -126px -173px;
+            }
+
+            @include breakpoints(m) {
+                background-size: 66%;
+                background-position: -164px -203px;
+            }
+
+            @include breakpoints(l) {
+                background-position: -173px -221px;
+                background-size: 62%;
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        margin: 0 0 22px;
+        font-size: 3.4rem;
+    }
+
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        margin: 0 0 24px;
+        line-height: 1;
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 2;
+        font-size: 2.4rem;
+        line-height: 1.2;
+        margin: 0 0 24px;
+    }
+
+    .c-link {
+        position: relative;
+        z-index: 2;
+    }
+}

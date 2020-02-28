@@ -1,0 +1,151 @@
+/* Benefits */
+
+.benefits {
+    margin: 0 -15px;
+    padding: 8rem 0;
+}
+
+.benefits__title {
+    margin-bottom: 3rem;
+
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+    .benefits--right .benefits-row {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Benefits List */
+
+.benefits-list, .benefits-form {
+    margin: 0 0 35px;
+    list-style-type: none;
+}
+
+.benefits-list__item {
+    display: block;
+    position: relative;
+
+    margin: 0 0 3.5rem;
+    padding-left: 4rem;
+
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.benefits-list__item:last-of-type {
+    margin: 0;
+}
+
+.benefits-list__item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 2.1rem;
+    height: 100%;
+
+    background-image: url(https://info.biosearchtech.com/hubfs/Image/PAG-lp-images/icon-check.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-list, .benefits-form {
+        margin: 0;
+    }
+}
+
+/* Benefit Card */
+
+.benefit-card {
+    position: relative;
+
+    margin: 0 0 20px;
+
+    background: #f3f2f2;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.benefit-card__content {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.benefit-card a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.benefit-card a:hover .benefit-card__title, .benefit-card a:hover .benefit-card__text {
+    color: #258b99;
+}
+
+.benefit-card__title {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000;
+}
+
+.benefit-card__text {
+    width: 100%;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    .benefit-card:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    .benefit-card__content {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .benefit-card__title {
+        font-size: 14px;
+    }
+
+    .benefit-card__text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .benefit-card__title {
+        font-size: 16px;
+    }
+
+    .benefit-card__text {
+        font-size: 14px;
+    }
+}

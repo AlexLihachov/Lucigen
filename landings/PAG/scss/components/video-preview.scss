@@ -1,0 +1,83 @@
+.c-video-preview {
+    display: block;
+    width: 100%;
+    margin: 0 0 5rem;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+
+    &__image {
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.294964028%;
+        margin: 0 0 1.6rem;
+
+        cursor: pointer;
+
+        @include hocus() {
+            &:before {
+                color: darken(#aaaaaa, 15);
+            }
+        }
+
+        &:before, &:after {
+            z-index: 2;
+            content: '\f16a';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translateX(-50%) translateY(-50%);
+
+            font-family: "fontello";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 8rem;
+            speak: none;
+            color: #aaaaaa;
+            transition: all .2s ease-in;
+
+        }
+
+        &:after {
+            font-size: 3rem;
+            color: #fff;
+            width: 2.7rem;
+            background: #fff;
+            z-index: 1;
+        }
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.294964028%;
+        margin: 0 0 1.6rem;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        margin: 0 0 1.5rem;
+        font: {
+            size: 1.8rem;
+            weight: 700;
+        };
+        line-height: 1.2;
+    }
+}
