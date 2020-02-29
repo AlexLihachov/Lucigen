@@ -7,6 +7,7 @@
                         {% if module.form_iframe  %}
                         {{ module.form_iframe }}
                         {% endif %}
+                        <div class="video-preview__placeholder"></div>
                     </div>
                 </div>
             </div>

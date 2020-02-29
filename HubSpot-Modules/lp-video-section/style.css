@@ -2,8 +2,7 @@
 
 .videos-section {
     margin: 0 -15px;
-    padding-top: 8.3rem;
-    padding-bottom: 1.5rem;
+    padding: 8.3rem 0;
 }
 
 .videos-section__content h1, .videos-section__content h2, .videos-section__content h3,
@@ -65,7 +64,7 @@
 .video-preview {
     display: block;
     width: 100%;
-    margin: 0 0 5rem;
+    margin: 0 0 4rem;
     cursor: pointer;
     color: #000;
     text-decoration: none;
@@ -85,7 +84,15 @@ a.video-preview {
 .video-preview__wrapper {
     width: 100%;
     position: relative;
+}
+.video-preview__placeholder {
+    display: block;
     padding-bottom: 56.294964028%;
+}
+
+/* Remove placeholder is Hubspot embedded wrapper present  */
+.video-preview__wrapper .hs-responsive-embed-wrapper + .video-preview__placeholder {
+    display: none;
 }
 
 .video-preview__wrapper iframe {
@@ -139,7 +146,7 @@ a.video-preview {
 }
 
 .video-preview__title {
-    margin: 0 0 1.5rem;
+    /*margin: 0 0 1.5rem;*/
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.2;
@@ -150,27 +157,36 @@ a.video-preview {
     margin-top: 20px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .video-grid .video-preview {
-    position: relative;
     width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+
+    position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
+}
+
+.video-grid .video-preview:last-of-type {
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
-    .video-grid {
-        margin-top: 0;
-        flex-direction: row;
-        flex-wrap: nowrap;
+    .video-preview {
+        margin: 0 0 2.5rem;
+    }
+
+    .video-grid .video-preview {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+    }
+
+    .video-grid .video-preview:nth-last-of-type(-n + 3) {
+        margin-bottom: 0;
     }
 }
