@@ -1,0 +1,101 @@
+.image-text {
+	margin: 0 -15px;
+	padding: 5rem 0;
+	overflow: hidden;
+}
+
+.image-text__content h1, .image-text__content h2, .image-text__content h3,
+.image-text__content h4, .image-text__content h5, .image-text__content h6 {
+	margin: 0 0 2.8rem;
+
+	font-weight: 700;
+	line-height: 1.2;
+	color: #000;
+}
+
+.image-text__content {
+	margin: 20px 0 0;
+}
+
+.image-text__media {
+	text-align: center;
+}
+
+.image-text__content h1 {
+	font-size: 5rem;
+}
+
+.image-text__content h2 {
+	font-size: 3.4rem;
+}
+
+.image-text__content h3 {
+	font-size: 3rem;
+}
+
+.image-text__content h4, .image-text__content h5, .image-text__content h6 {
+	font-size: 2rem;
+}
+
+.image-text__content p, .image-text__content li {
+	margin: 0 0 1.8rem;
+
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1.3;
+	color: #000;
+}
+
+.image-text__content li {
+	margin: 0 0 5px;
+}
+
+.image-text__content ul {
+	margin: 0 0 1.8rem;
+	padding-left: 2rem;
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+.image-text__content ol {
+	margin: 0 0 1.8rem;
+	padding-left: 2rem;
+	list-style: decimal;
+	list-style-position: outside;
+}
+
+.image-text__content p:last-of-type {
+	margin: 0;
+}
+
+.image-text__content p:last-of-type + ul, .image-text__content p:last-of-type + ol {
+	margin-top: 1.8rem;
+}
+
+.image-text__content a {
+	display: inline-block;
+	margin: 0;
+	line-height: 1.5;
+	font-size: 2rem;
+	font-weight: 400;
+	color: #258b99;
+	transition: color .2s ease-in;
+	text-decoration: none;
+	border-bottom: 1px solid #258b99;
+}
+
+.image-text__content a:hover {
+	color: #1b6670;
+	border-bottom: 1px solid #1b6670;
+}
+
+.image-text__content + .image-text__cta {
+	margin: 30px 0 0;
+}
+
+
+@media screen and (min-width: 768px) {
+	.image-text__content {
+		margin: 0;
+	}
+}

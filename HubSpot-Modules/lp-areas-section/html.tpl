@@ -34,6 +34,11 @@
                 <h3 class="areas-section__title">
                     {{ module.section_title }}
                 </h3>
+                {% if module.section_subtitle %}
+                <p class="areas-section__subtitle">
+                    {{ module.section_subtitle }}
+                </p>
+                {% endif %}
             </div>
         </div>
     </div>

@@ -15,8 +15,16 @@
     color: #000;
 }
 
+.grey-intro-section__inner {
+    padding-bottom: 4rem;
+}
+
 .grey-intro-section__content {
     margin: 0 0 20px;
+}
+
+.grey-intro-section__content--center {
+    text-align: center;
 }
 
 .grey-intro-section__content h1 {
@@ -100,6 +108,10 @@
 
 .grey-intro-section__cta {
     text-align: left;
+}
+
+.grey-intro-section__cta--center {
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {

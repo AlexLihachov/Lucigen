@@ -31,6 +31,14 @@
 
 .banner__subtitle a {
     color: #fafcfd;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: all .2s ease-in;
+}
+
+.banner__subtitle a:hover, .banner__subtitle a:focus {
+    color: #258b99;
+    border-bottom-color: #258b99;
 }
 
 .banner__popup-trigger {
