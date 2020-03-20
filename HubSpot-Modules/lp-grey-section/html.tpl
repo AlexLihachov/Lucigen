@@ -1,4 +1,9 @@
-<section class="grey-intro-section">
+{% set sectionClasses="grey-intro-section" %}
+{% if module.shape_background_image.src %}
+{% set sectionClasses="grey-intro-section grey-intro-section--image" %}
+{% endif %}
+
+<section class="{{ sectionClasses }}">
     <div class="container">
         <div class="row">
 

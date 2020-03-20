@@ -367,7 +367,7 @@ function createShapeCanvas() {
                 firstPathData: 'M147.1,222c-65.5,0.7-163-79-144.9-140c18-59.3,66.3-81.5,115.9-82C185.2-0.7,254.6,38.4,255,79.5\n' +
                 '\tc0.4,47.2-40.4,109.7-76.5,133.8C169.6,219.2,158.9,221.9,147.1,222',
                 firstPathX: 0,
-                firstPathY: 27,
+                firstPathY: 0,
                 firstPathColor: '#00788A',
 
                 secondPathData: 'M48.8,112.3c-4.5,0.9-8.9,0.9-13,0c-31.2-6.1-49.4-55.3-23.3-60.3c32.2-6.1-1.4-57,27.8-51.7\n' +
@@ -683,6 +683,33 @@ function createShapeCanvas() {
                 gradientEndX: 308.6381,
                 gradientStartY: 163.9691,
                 gradientEndY: 163.9691
+            },
+            // 27 -- user photo first bottom
+            {
+                canvasWidth: 290,
+                canvasHeight: 249,
+                imageInFirstLayer: true,
+                isFirstLayerOverlay: false,
+                isGradient: true,
+
+                firstPathData: 'M147.1,222c-65.5,0.7-163-79-144.9-140c18-59.3,66.3-81.5,115.9-82C185.2-0.7,254.6,38.4,255,79.5\n' +
+                    '\tc0.4,47.2-40.4,109.7-76.5,133.8C169.6,219.2,158.9,221.9,147.1,222',
+                firstPathX: 0,
+                firstPathY: 0,
+                firstPathColor: '#00788A',
+
+                secondPathData: 'M123.2,95.1c-3,5.2-6.8,9.4-11.1,13c-32.7,26.5-96.2,8.7-78.6-20.9C55.1,50.8-23.2,47,7,21.8\n' +
+                    '\tC28.6,3.8,67.8-7.4,93.2,5.6C104.2,11.2,148.8,51.1,123.2,95.1',
+                secondPathX: 157,
+                secondPathY: 125,
+                secondPathColor: '#67C8C7',
+
+                gradientStartX: 0,
+                gradientEndX: 131,
+                gradientStartY: 60.5,
+                gradientEndY: 60.5,
+
+                opacity: 0.8
             }
         ];
 

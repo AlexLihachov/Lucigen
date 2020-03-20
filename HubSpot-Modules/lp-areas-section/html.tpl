@@ -1,3 +1,8 @@
+{% set sectionClass="areas-section" %}
+{% if module.remove_padding_bottom %}
+{% set sectionClass="areas-section areas-section--remove-bottom" %}
+{% endif %}
+
 {% set gridStyleClass="card-grid" %}
 {% set groupsAmount=module.column_group|length %}
 {% set groupsRows=groupsAmount/4 %}
@@ -26,7 +31,7 @@
 
 {% endif %}
 
-<section class="areas-section">
+<section class="{{ sectionClass }}">
     {% if module.section_title %}
     <div class="container">
         <div class="row">

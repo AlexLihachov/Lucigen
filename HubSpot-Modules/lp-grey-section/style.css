@@ -1,9 +1,13 @@
 /* Grey Intro Section */
 .grey-intro-section {
     margin: 0 -15px;
-    padding: 10.7rem 0 0;
+    padding: 4rem 0 0;
     overflow: hidden;
     background-color: #f2f1f1;
+}
+
+.grey-intro-section--image {
+    padding: 10.7rem 0 0;
 }
 
 .grey-intro-section__content h1, .grey-intro-section__content h2, .grey-intro-section__content h3,
@@ -79,11 +83,11 @@
 }
 
 .grey-intro-section__content a {
-    display: inline-block;
+    display: inline;
     margin: 0;
     line-height: 1.5;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: inherit;
     color: #258b99;
     transition: color .2s ease-in;
     text-decoration: none;
