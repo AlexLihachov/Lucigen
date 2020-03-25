@@ -1,16 +1,30 @@
+{% set mediaColumnsClasses="image-text__media" %}
+{% if module.use_lightgallery %}
+{% set mediaColumnsClasses="image-text__media js-hook__lg" %}
+{% endif %}
+
+
 <section class="image-text">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-sm-6">
-				<div class="image-text__media">
-					{% if module.image_text_image.src %}
-					{% set sizeAttrs = 'width="{{ module.image_text_image.width }}" height="{{ module.image_text_image.height }}"' %}
-					{% if module.image_text_image.size_type == 'auto' %}
-					{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
-					{% elif module.image_text_image.size_type == 'auto_custom_max' %}
-					{% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.image_text_image.max_width }}px; max-height: {{ module.image_text_image.max_height }}px"' %}
+				<div class="{{ mediaColumnsClasses }}" >
+					{% if module.use_lightgallery %}
+					<a href="{{ module.image_text_image.src }}">
 					{% endif %}
-					<img class="" src="{{ module.image_text_image.src }}" alt="{{ module.image_text_image.alt }}" {{ sizeAttrs }}>
+
+						{% if module.image_text_image.src %}
+						{% set sizeAttrs = 'width="{{ module.image_text_image.width }}" height="{{ module.image_text_image.height }}"' %}
+						{% if module.image_text_image.size_type == 'auto' %}
+						{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif module.image_text_image.size_type == 'auto_custom_max' %}
+						{% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.image_text_image.max_width }}px; max-height: {{ module.image_text_image.max_height }}px"' %}
+						{% endif %}
+						<img class="" src="{{ module.image_text_image.src }}" alt="{{ module.image_text_image.alt }}" {{ sizeAttrs }}>
+						{% endif %}
+
+					{% if module.use_lightgallery %}
+					</a>
 					{% endif %}
 				</div>
 			</div>

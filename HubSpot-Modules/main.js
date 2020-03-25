@@ -1085,3 +1085,36 @@ $(window).on('resizeEnd', function () {
         }
     });
 }());
+
+/**
+ * LightGallery
+ * http://sachinchoolur.github.io/
+ */
+(function () {
+    var $lgTriggers = $('.js-hook__lg');
+
+    function initLightGallery() {
+        $lgTriggers.each(function (i, item) {
+            $(item).lightGallery({
+                mode: 'lg-fade',
+                controls: false,
+                counter: false,
+                scale: 0.5
+            });
+        });
+    }
+
+    if ($lgTriggers.length) {
+        var url = '{{ get_public_template_url("/Templates/Custom/Page/assets/lightgallery.js") }}';
+        var zoomModuleUrl = '{{ get_asset_url("/Templates/Custom/Page/assets/lightgallery-js-zoom.js") }}';
+        var fullScreenModuleUrl = '{{ get_asset_url("/Templates/Custom/Page/assets/lightgallery-js-full-screen.js") }}';
+
+        $.getScript(url, function () {
+            $.getScript(zoomModuleUrl, function () {
+                $.getScript(fullScreenModuleUrl, function () {
+                    initLightGallery();
+                });
+            });
+        });
+    }
+}());

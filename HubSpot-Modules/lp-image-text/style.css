@@ -1,3 +1,7 @@
+body.lg-on {
+	overflow: hidden;
+}
+
 .image-text {
 	margin: 0 -15px;
 	padding: 5rem 0;
@@ -19,6 +23,12 @@
 
 .image-text__media {
 	text-align: center;
+}
+
+.image-text__media a {
+	display: block;
+	width: 100%;
+	border: none;
 }
 
 .image-text__content h1 {
